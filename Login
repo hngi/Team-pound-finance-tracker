@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1_login.css">
+</head>
+<body>
+    <header class="flex align-center flex-center">
+        <nav class="flex space-between">
+            <div class="logo-container flex align-center flex-center">
+                <img height="30px" src="./img/Logo.png" alt="">
+            </div>
+            <div> 
+                <a class="link" href="">Home</a>
+                <a class="link active" href="">Login</a>
+                <a class="link" href="">Sign up</a>           
+                <a class="link download" href="">Download App</a>           
+            </div>
+        </nav>
+    </header>
+       
+        <section class="page-container">
+            
+            <main class="flex flex-center">
+                <div class="login-card">
+                    <h2>Welcome Back!</h2>
+                    <div class="inputs">
+                        <div class="user">
+                            <img src="./img//user.png" alt="">
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="pass">
+                            <img src="./img/password.png" alt="">
+                            <input type="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <button type="submit">Get Started</button>
+                    <div class="bottom-text">    
+                            <input type="checkbox" name="" id="check" checked>Remember me. <a href="">Forgot password?</a>
+                            <p>New to Pound? &nbsp;&nbsp; <a href="">Sign up!</a></p> 
+                    </div>
+                </div>
+            </main>
+                    
+</body>
+</html>
