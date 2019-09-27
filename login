@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="./style1_login.css">
 </head>
 <body>
@@ -40,7 +40,7 @@
                     <button type="submit">Get Started</button>
                     <div class="bottom-text">    
                             <input type="checkbox" name="" id="check" checked>Remember me. <a href="">Forgot password?</a>
-                            <p>New to Pound? &nbsp;&nbsp; <a href="">Sign up!</a></p> 
+                            <p>New to Pound? &nbsp;&nbsp; <a href="sign up">Sign up!</a></p> 
                     </div>
                 </div>
             </main>
