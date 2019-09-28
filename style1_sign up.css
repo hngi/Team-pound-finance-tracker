@@ -8,7 +8,7 @@
 
    body {
      
-     background: #344a72;
+     background: url(./img/bckground.png);
      padding: 50px;
      line-height: 1.8em;
    }
@@ -22,6 +22,9 @@
      max-width: 350px;
      margin: 30px auto;
      padding: 20px 25px;
+     border-radius: 3px;
+    box-shadow: 2px 6px 7px #34414e; 
+      background: white;
            }
 
    .form-wrap {
@@ -85,3 +88,5 @@
    footer a {
      color: #49c1a2;
    }
+
+ 
