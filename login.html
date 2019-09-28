@@ -4,48 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Log in</title>
-    <link rel="stylesheet" href="./style1_login.css">
-</head>
-<body>
-    <header class="flex align-center flex-center">
-        <nav class="flex space-between">
-            <div class="logo-container flex align-center flex-center">
-                <img height="30px" src="./img/Logo.png" alt="">
-            </div>
-            <div> 
-                <a class="link" href="">Home</a>
-                <a class="link active" href="">Login</a>
-                <a class="link" href="">Sign up</a>           
-                <a class="link download" href="">Download App</a>           
-            </div>
-        </nav>
-    </header>
-       
-        <section class="page-container">
-            
-            <main class="flex flex-center">
-                <div class="login-card">
-                    <h2>Welcome Back!</h2>
-                    <div class="inputs">
-                        <div class="user">
-                            <img src="./img//user.png" alt="">
-                            <input type="text" placeholder="Username">
-                        </div>
-                        <div class="pass">
-                            <img src="./img/password.png" alt="">
-                            <input type="password" placeholder="Password">
-                        </div>
-                    </div>
-                    
-                     <a href="page2.html"><button>Login</button></a>
+    <title>Welcome to fintrack</title>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="ldLlgmhJLhWAW6CZyvfeieifvX4UgNUlopIkBua2">
+    <link rel="icon" href="http://myfintrack.000webhostapp.com/images/favicon.png">
+    <link rel="stylesheet" href="http://myfintrack.000webhostapp.com/css/style.css">
+    <!-- google fonts import -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto&display=swap" rel="stylesheet">
 
-                    <div class="bottom-text">    
-                            <input type="checkbox" name="" id="check" checked>Remember me. <a href="">Forgot password?</a>
-                            <p>New to Pound? &nbsp;&nbsp; <a href="sign up">Sign up!</a></p> 
-                    </div>
-                </div>
-            </main>
-                    
-</body>
+    <body class="landing">
+        <nav>
+        <div class="logo"><img src="http://myfintrack.000webhostapp.com/images/logo.png" alt=""></div>
+        <span class="hamburger" id="toggle-nav"></span>
+
+        <ul class="nav animated fadeIn" id="nav">
+                            <li>
+                    <a href="/" class="nav-item  active ">Home</a>
+                </li>
+                <li>
+                    <a href="http://myfintrack.000webhostapp.com/login" class="nav-item ">Login</a>
+                </li>
+                <li>
+                    <a href="http://myfintrack.000webhostapp.com/register" class="nav-item ">Sign Up</a>
+                </li>
+                <li>
+                    <a href="" class="btn btn-outline btn-sm">Download App</a>
+                </li>
+                    </ul>
+    </nav>        <main>        
+                <header>
+        <h1 class="heading">
+            <span>Track your spendings,</span> 
+            <span>take control of your finance</span>
+        </h1>
+        <p class="subheading">We help you monintor how money leaves your pocket, so you can save and acheive more.</p>
+        <div class="actions">               
+            <a href="http://myfintrack.000webhostapp.com/register" class="btn btn-lg btn-ascent">Get started</a>
+            <a href="https://easyasitis.com.ng/apk/fintrack.apk" download class="btn btn-outline btn-lg">Download the app</a>
+        </div>
+    </header>
+
+    <div class="trust">
+        <h4>Trusted by millions</h4>
+        <div class="people">
+            <div class="person"><img src="http://myfintrack.000webhostapp.com/images/people/p1.jpeg" alt=""></div>
+            <div class="person"><img src="http://myfintrack.000webhostapp.com/images/people/p2.jpeg" alt=""></div>
+            <div class="person"><img src="http://myfintrack.000webhostapp.com/images/people/p3.jpeg" alt=""></div>
+            <div class="person"><img src="http://myfintrack.000webhostapp.com/images/people/p4.jpeg" alt=""></div>
+            <div class="person"><img src="http://myfintrack.000webhostapp.com/images/people/p5.jpeg" alt=""></div>
+        </div>
+    </div>
+        </main>
+        <div></div>
 </html>
