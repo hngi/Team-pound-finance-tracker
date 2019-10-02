@@ -1,0 +1,14 @@
+/* import base css file, file contains general styles and variables declaration */
+@import "base/base.css";
+
+/* import animations */
+@import "base/animate.css";
+
+/* import components styles */
+@import "components/index.css";
+
+/* import pages styles */
+@import "pages/index.css";
+
+/* import styles for responsiveness */
+@import "base/responsive.css";

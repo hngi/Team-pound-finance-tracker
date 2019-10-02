@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Fintrack</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- google fonts import -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto&display=swap" rel="stylesheet">
+
+<body class="dashboard">
+    <nav>
+        <div class="logo"><img src="../images/logo.png" alt=""></div>
+        <span class="hamburger" id="toggle-nav"></span>
+        <ul class="nav animated fadeIn" id="nav">
+            <li>
+                <a href="dashboard.html" class="nav-item active">Dashboard</a>
+            </li>
+            <li>
+                <a href="spendings.html" class="nav-item">Spendings</a>
+            </li>
+            <li>
+                <a href="earnings.html" class="nav-item">Earnings</a>
+            </li>
+            <li class="nav-user dropdown" id="dropdown">
+                <div class="user-img">
+                    <img src="../images/user-icon.png" alt="">
+                </div>
+                <span class="name">Silas</span>
+                <span data-feather="chevron-down" class="drop-icon"></span>
+
+                <div class="dropdown-main" id="dropdown-main">
+                    <ul class="dropdown-list">
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-icon icon-1">
+                    <span data-feather="archive"></span>
+                </div>
+                <h3 class="stat-value">₦15,300</h3>
+                <p class="stat-title">Available Balance</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon icon-2">
+                    <span data-feather="credit-card"></span>
+                </div>
+                <h3 class="stat-value">₦8,600</h3>
+                <p class="stat-title">Spent this month</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon icon-3">
+                    <span data-feather="gift"></span>
+                </div>
+                <h3 class="stat-value">₦23,900</h3>
+                <p class="stat-title">Earned this month</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon icon-4">
+                    <span data-feather="trending-up"></span>
+                </div>
+                <h3 class="stat-value">30%</h3>
+                <p class="stat-title">Spending Increase</p>
+            </div>
+        </div>
+
+        <div class="spending-summary">
+            <div class="text">
+                <h5>Spending summary</h5>
+                <p class="spending-text">Keep it up! you've been spending wisely</p>
+            </div>
+            <div class="icon">
+                <span data-feather="check-circle" class="summary-icon good"></span>
+            </div>
+        </div>
+
+        <div class="table">
+            <div class="table-heading">
+                <h4>Spending History</h4>
+            </div>
+            <div class="table-body">
+                <table class="table-main">
+                    <thead>
+                        <th>#</th>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Berglunds snabbköp</td>
+                        <td>Christina Berglund</td>
+                        <td>Sweden</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Königlich Essen</td>
+                        <td>Philip Cramer</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>North/South</td>
+                        <td>Simon Crowther</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Paris spécialités</td>
+                        <td>Marie Bertrand</td>
+                        <td>France</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-footer">
+                <span class="items-shown">
+                    1 - 10 of 95
+                </span>
+                <div class="pagination">
+                    <ul class="pag-links">
+                        <li><span class="pag-link disabled icon">
+                            <span data-feather="chevron-left" class="pag-icon"></span>
+                        </span></li>
+                        <li><span class="pag-link active">1</span></li>
+                        <li><span class="pag-link">2</span></li>
+                        <li><span class="pag-link">3</span></li>
+                        <li><span class="pag-link icon">
+                            <span data-feather="chevron-right" class="pag-icon"></span>
+                        </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div></div>
+
+    <script src="../scripts/feather.js"></script>
+    <script src="../scripts/sript.js"></script>
+</body>
+
+</html>

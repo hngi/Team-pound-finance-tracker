@@ -1,0 +1,47 @@
+.dashboard main{
+    margin: 5rem 22rem;
+    padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 1200px){
+    .dashboard main{
+        margin: 5rem 15rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .dashboard main {
+        margin: 5rem 10rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .dashboard main {
+        margin: 4rem 6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard main {
+        margin: 2rem 3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .dashboard main {
+        margin: 2rem 1.5rem;
+    }
+}
+
+.stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+    .stats {
+        justify-content: space-around;
+    }
+}

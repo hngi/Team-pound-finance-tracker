@@ -1,0 +1,101 @@
+nav{
+    display: flex;
+    height: 6rem;
+    border-bottom: solid 1px var(--light-color);
+    justify-content: space-between;
+    padding: .5rem 4rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    transition: all .10s ease;
+}
+
+.nav li:not(:last-child){
+    margin-right: 3rem;
+}
+
+.nav-item{
+    color: var(--dark-color);
+    transition: .2s ease all;
+}
+
+.nav-item.active , .nav-item:active, .nav-item:hover{
+    color: var(--ascent-color);
+}
+
+.toggle{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburger{
+    position: relative;
+}
+
+.hamburger, .hamburger::after, .hamburger::before{
+    display: inline-block;
+    height: .3rem;
+    width: 2.5rem;
+    background: var(--dark-color);
+    border-radius: 2px;
+}
+
+.hamburger::before{
+    content: "";
+    position: absolute;
+    top: -.8rem;
+}
+
+.hamburger::after {
+    content: "";
+    position: absolute;
+    top: .8rem;
+}
+
+.show-nav{
+    /* visibility: visible !important; */
+    display: flex !important;
+    height: auto !important;
+}
+
+.nav-user{
+    display: flex;
+    align-items: center;
+}
+
+.nav-user .user-img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.user-img img{
+    width: 100%;
+}
+
+.nav-user .name {
+    margin: 0 .5rem;
+}
+
+.drop-icon{
+    width: 16px;
+}
+
+@media screen and (max-width: 600px){
+    .nav-user{
+        color: var(--light-color);
+    }
+}

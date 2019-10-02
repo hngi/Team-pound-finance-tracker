@@ -1,0 +1,32 @@
+/* this file imports all other components */
+@import "./buttons.css";
+
+/* import navigation */
+@import "./navigation.css";
+
+/* import header */
+@import "./header.css";
+
+/* import form styles */
+@import "./form.css";
+
+/* stat card */
+@import "./stat-card.css";
+
+/* spending summary */
+@import "./spending-summary.css";
+
+/* tables summary */
+@import "./table.css";
+
+/* pagination */
+@import "./pagination.css";
+
+/* create entries */
+@import "./create-entries.css";
+
+/* notifications */
+@import "./notifications.css";
+
+/* dropdown */
+@import "./dropdown.css";

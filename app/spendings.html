@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Fintrack</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- google fonts import -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto&display=swap" rel="stylesheet">
+
+<body class="dashboard">
+    <nav>
+        <div class="logo"><img src="../images/logo.png" alt=""></div>
+        <span class="hamburger" id="toggle-nav"></span>
+        <ul class="nav animated fadeIn" id="nav">
+            <li>
+                <a href="dashboard.html" class="nav-item">Dashboard</a>
+            </li>
+            <li>
+                <a href="spendings.html" class="nav-item active">Spendings</a>
+            </li>
+            <li>
+                <a href="earnings.html" class="nav-item">Earnings</a>
+            </li>
+            <li class="nav-user">
+                <div class="user-img">
+                    <img src="../images/user-icon.png" alt="">
+                </div>
+                <span class="name">Silas</span>
+                <span data-feather="chevron-down" class="drop-icon"></span>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="add-entry animated fadeIn">
+            <button id="add-entries" class="btn btn-lg btn-ascent">Add spendings</button>
+
+            <div class="create-entries">
+                <div>
+                    <h4>Add spendings</h4>
+                    <span class="text-link close-entries">close <span data-feather="x-circle"></span></span>
+                </div>
+                <div class="entry-forms">
+                    <div class="notification notification-success">
+                        Here's a success message
+                        <p class="notification-action">
+                            <a href="" class="text-link">Edit</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+                            <a href="" class="text-link">Delete</a>
+                        </p>
+                    </div>
+                    <div class="notification notification-error">
+                        Here's a success message
+                        <p class="notification-action">
+                            <a href="" class="text-link">Edit</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+                            <a href="" class="text-link">Delete</a>
+                        </p>
+                    </div>
+                </div>
+                <p class="new-entry"><a href="" class="text-link" id="add-item">+ Add New Item</a></p>
+            </div>
+        </div>
+    </main>
+
+    <div></div>
+
+    <script src="../scripts/feather.js"></script>
+    <script src="../scripts/sript.js"></script>
+    <script src="../scripts/entries.js"></script>
+</body>
+
+</html>

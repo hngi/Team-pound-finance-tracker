@@ -1,0 +1,18 @@
+.notification{
+    padding: 1.5rem;
+    color: #fff;
+    border-radius: 5px;
+    margin: .5rem 0;
+}
+
+.notification-success{
+    background: rgba(86, 171, 47, 0.45);
+}
+
+.notification-error {
+    background: rgba(214, 19, 62, 0.45);
+}
+
+.notification-action {
+    float: right;
+}

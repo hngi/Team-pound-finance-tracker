@@ -1,0 +1,43 @@
+.pagination {
+    display: inline-block;
+}
+
+.pag-links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.pag-links li{
+    margin: auto .5rem;
+}
+
+.pag-link{
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.pag-link:not(.icon){
+        padding: .5rem 1rem;
+}
+
+.pag-link.icon{
+    padding: .2rem .3rem;
+    /* line-height: 20px; */
+}
+
+.pag-link:not(.disabled):hover,
+.pag-link.active {
+    background: var(--ascent-color);
+    color: #fff;
+}
+
+.pag-link.disabled{
+    cursor: not-allowed;
+}
+
+.pag-icon{
+    width: 20px;
+    height: 20px;
+}

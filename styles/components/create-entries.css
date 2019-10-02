@@ -1,0 +1,96 @@
+.add-entry{
+    margin: 0 1rem;
+}
+
+
+.create-entries{
+    border: solid 1px var(--light-color);
+    margin: 2.5rem 0;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    display: none;
+}
+
+.create-entries h4{
+    text-align: left;
+    display: inline-block;
+}
+
+.entry-forms{
+    margin: 1.5rem 0;
+}
+
+.entry-form{
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.entry-form .input-1{
+    flex: 5;
+}
+
+.entry-form .input-2{
+    flex: 3;
+}
+
+.entry-form .input-1, .entry-form .input-2{
+    margin: auto 1rem;
+}
+
+.entry-form .entry-btn .feather{
+    width: 20px;
+    height: 20px;
+}
+
+.entry-btn .btn{
+    padding: 1.2rem 2.2rem;
+}
+
+@media screen and (max-width: 600px){
+    .entry-form{
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: flex-end;
+    }
+
+    .entry-form .entry-id{
+        align-self: flex-start;
+    }
+
+    .entry-form .input-1,
+    .entry-form .input-2 {
+        margin: 1rem auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .create-entries{
+        padding: 1.5rem;
+    }
+}
+
+.new-entry{
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.new-entry a{
+    float: right;
+}
+
+.close-entries{
+    float: right;
+    position: relative; 
+    top: -2px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.close-entries .feather{
+    width: 14px;
+    height: 14px;
+    margin-left: .5rem;
+}

@@ -1,0 +1,36 @@
+.dropdown{
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-main{
+    position: absolute;
+    background: #fff;
+    padding: 1rem;
+    top: 3.5rem;
+    left: 0;
+    box-shadow: 0 3rem 8rem rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: none;
+}
+
+.dropdown-main ul{
+    list-style: none;
+}
+
+.dropdown-main ul li{
+    padding: .5rem 2rem;
+}
+
+.dropdown ul li:hover{
+    background: rgba(245, 245, 245, 0.4);
+}
+
+.dropdown-main li a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.show-dropdown{
+    display: block;
+}

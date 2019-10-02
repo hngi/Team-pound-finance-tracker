@@ -1,0 +1,56 @@
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    margin-bottom: 2.5rem;
+}
+
+.form-group label{
+    font-size: 1.5rem;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-input{
+    display: block;
+    outline: none;
+    width: 100%;
+    height: 5rem;
+    border: solid 2px var(--light-color);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    color: var(--dark-color);
+    font-size: 1.6rem;
+}
+
+.form-input::placeholder{
+    color: var(--light-color);
+    font-size: 1.4rem;
+}
+
+.form-input:active,
+.form-input:focus {
+    border-color: var(--dark-color);
+}
+
+.form-group .btn{
+    float: right;
+}
+
+.form-group::after{
+    float: none;
+    clear: both;
+}
+
+.form-input.error{
+    border-color: var(--primary-color);
+}
+
+.error-text{
+    display: inline-block;
+    margin-top: .5rem;
+    color: var(--primary-color);
+}

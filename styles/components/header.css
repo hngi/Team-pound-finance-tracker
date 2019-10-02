@@ -1,0 +1,29 @@
+header{
+    display: grid;
+    padding: 10rem 0;
+    grid-template-columns: minmax(750px, 45%);
+    justify-content: center;
+}
+
+.heading{
+    font-size: 4.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.heading span{
+    display: block;
+}
+
+.subheading{
+    font-size: 1.6rem;
+    margin: 2.5rem 0;
+}
+
+header .actions{
+    margin-top: 4rem;
+}
+header .actions a {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}

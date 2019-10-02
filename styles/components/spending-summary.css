@@ -1,0 +1,36 @@
+.spending-summary{
+    padding: 2rem 3rem;
+    border: solid 1px var(--light-color);
+    border-radius: 10px;
+    margin: 0 1rem 3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spending-summary .text{
+    margin-right: .5rem;
+    flex: 1;
+}
+
+.spending-summary .text h5{
+    margin-bottom: 1rem;
+}
+
+.spending-text{
+    font-size: 1.6rem;
+}
+
+.summary-icon{
+    width: 50px;
+    height: 50px;
+    stroke-width: 1;
+}
+
+.summary-icon.good{
+    color: var(--ascent-color);
+}
+
+.summary-icon.bad{
+    color: var(--primary-color);
+}

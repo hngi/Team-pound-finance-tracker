@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #D6133E;
+    --ascent-color: #56AB2F;
+    --ascent-dark-color: #327513;
+    --light-color: #BDBDBD;
+    --dark-color: #4F4F4F;
+    --blue : #0074D9;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--dark-color);
+    max-width: 100%;
+    overflow-X: hidden;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+h4{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 1.6rem;
+}
+
+.text-link{
+    color: var(--blue);
+    cursor: pointer;
+}

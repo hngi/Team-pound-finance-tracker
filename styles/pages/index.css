@@ -1,0 +1,4 @@
+/* this file imports all other pages styles */
+@import "./landing.css";
+@import "./auth.css";
+@import "./dashboard.css";

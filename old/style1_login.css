@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./img/bckground.png);
+}
+/*.page-container{
+    min-height: 100vh;
+    width: 100%;
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}*/
+
+header{
+    height:50px;
+    width: 100%;
+    background: #fff;
+    border-bottom: #8c8a8a;
+    margin-bottom: 100px;
+}
+
+.logo-container {
+    margin-left: 20px;
+}
+nav{
+    width: 100%;
+}
+
+.link {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.active {
+    color: #288134;
+}
+
+.download {
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 5px;
+}
+main{
+    width: 100%;
+}
+
+main .login-card{
+    background: white;
+    background-size: cover;
+    width: 350px;
+    min-height: 380px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3px;
+    box-shadow: 2px 6px 7px #34414e; 
+    
+}
+
+h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+.inputs input{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid grey;
+    height: 50px;
+    outline: none!important;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.inputs input::placeholder{
+    color: #f4f4f4;
+    font-size: 13px;
+}
+
+.login-card button{
+    margin: 0 auto;
+    border: none;
+    outline: none!important;
+    background: #288134;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    box-shadow: 0 5px 0px #8c8a8a;
+    top: 0;
+}
+
+.login-card button:hover{
+    box-shadow: 0 3px 0px #8c8a8a;
+    top: 2px;
+}
+
+.login-card button:active{
+    box-shadow: 0 0 0px #8c8a8a;
+    top: 5px;
+}
+
+.user, .pass{
+    position: relative;
+}
+
+.user img, .pass img{
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 18px;
+}
+.login-card a {
+    text-decoration: none;
+    color: rgb(144, 241, 212);
+}
+
+.bottom-text {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    font-size: 0.8em;
+    line-height: 25px;
+    text-align: center;
+    }
+
+.flex{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.align-center{
+    align-items: center;
+}
+
+.space-between{
+    justify-content: space-between
+}
+
+.flex-center{
+    justify-content: center
+}
