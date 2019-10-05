@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+    * {
+        outline: none;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+
+    html, body, ::after, ::before {
+        padding: 0;
+        margin: 0;
+    }
+    :root {
+        --font-family: 'Roboto', sans-serif;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px 80px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .text-content {
+        font-size: .95em;
+        font-family: var(--font-family);
+        word-wrap: break-word;
+        word-break: keep-all;
+        writing-mode: horizontal-tb;
+        text-align: left;
+        text-overflow: ellipsis;
+        line-height: 30px;
+    }
+
+    .accordion--btn {
+        position: relative;
+        background-color: #eee;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+    }
+
+    .accordion--btn > i {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .5s;
+    }
+
+    [data-question] {
+        font: 1.3em var(--font-family);
+        color: #444;
+    }
+
+    .accordion--btn.active > i {
+        transform: translateY(-50%) rotate(180deg);
+    }
+    
+    .active, .accordion--btn:hover {
+        background-color: #ccc; 
+    }
+
+    .active {
+        box-shadow: 2px 3px 5px #e0e0e0;
+    }
+    
+    .accordion--content {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    @media (max-width: 992.98px) {
+        .container {
+            padding: 10px 40px;
+            width: 97%;
+        }
+    }
+</style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="faq--section">
+                <h2 class="heading">Frequently asked questions</h2>
+                <div class="accordion">
+                    <button class="accordion--btn" data-question >What is myFinTracker
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                    <div class="accordion--content" data-answer>
+                        <p class="text-content">
+                            myFinTracker is a finance tracking application that help users control and
+                             understand their spending limit. With this app, you can minimize your 
+                             resource usage as well as making sure you don't spend above your monthly 
+                             or yearly allowance (or as the case may be).
+                        </p>
+                    </div>
+                    <button class="accordion--btn" data-question>How can I add Spendings?
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                    <div class="accordion--content" data-answer>
+                        <p class="text-content">
+                            From your Dashboard, navigate to Spendings >> Click on 
+                            "ADD SPENDINGS", fill out the description and amount fields. 
+                            Click the "marked button" to save your entries.
+
+                        </p>
+                    </div>
+                    <button class="accordion--btn" data-question>How can I add Earnings?
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                    <div class="accordion--content" data-answer>
+                        <p class="text-content">
+                            Similarly, from your Dashboard, navigate to Earnings >> Click on 
+                            "ADD EARNINGS", fill out the description and amount fields. 
+                            Click the "marked button" to save your entries.
+                        </p>
+                    </div>
+                    <button class="accordion--btn" data-question>Is it secure?
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                    <div class="accordion--content" data-answer>
+                        <p class="text-content">
+                            MyFinTracker tracks your spending limit so as to notify you when you're
+                            running into debt or gain. Any information gathered by myFinTracker is only 
+                            cached in your device and are not in any way processed to any third-party 
+                            ownership.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script type="text/javascript">
+        const accordionBtn = document.querySelectorAll(".accordion--btn");
+        accordionBtn.forEach(el => {
+            el.addEventListener('click', ()=> {
+                el.classList.toggle('active');
+                const content = el.nextElementSibling;
+                (content.style.maxHeight) ? (
+                    content.style.maxHeight = null
+                    ) : content.style.maxHeight = `${content.scrollHeight}px`
+            })
+        })
+    </script>
+</body>
+</html>
